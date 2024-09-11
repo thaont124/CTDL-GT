@@ -1,0 +1,7 @@
+1. Phân biệt Subset và SubArray
+	- Subset (Tập con): 
+		- không yêu cầu các phần tử phải liên tiếp trong mảng gốc
+		- {1, 2, 3}, các tập con có thể là {1}, {2, 3}, {1, 2, 3} hoặc {1,3}
+	-Subarray (Mảng con):
+ 		- yêu cầu các phần tử phải liên tiếp trong mảng gốc.
+		-{1, 2, 3}, các mảng con có thể là {1, 2}, {2, 3, 4}, hoặc {3} nhưng không có {1,3}
