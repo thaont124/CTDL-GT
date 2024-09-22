@@ -24,7 +24,7 @@ public class PhanTichSoMot {
 
         while (list.size() < n) {
             results.add(list);
-            System.out.println(list.toString());
+            // System.out.println(list.toString());
             list = nextGeneration(n, list);
         }
         results.add(list);

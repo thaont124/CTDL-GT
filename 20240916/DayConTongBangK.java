@@ -6,6 +6,8 @@ import java.util.Scanner;
 
 public class DayConTongBangK {
 
+    static int cnt;
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int t = scanner.nextInt();
@@ -15,6 +17,7 @@ public class DayConTongBangK {
             int sum = scanner.nextInt();
             int[] a = new int[n];
             List<Integer> result = new ArrayList<>();
+            cnt = 0;
 
             for (int i = 0; i < n; i++) {
                 a[i] = scanner.nextInt();
@@ -22,7 +25,11 @@ public class DayConTongBangK {
 
             Arrays.sort(a);
             backTrack(0, sum, a, result);
+            if (cnt == 0) {
+                System.out.println(-1);
+            }
             System.out.println();
+
         }
     }
 
@@ -30,6 +37,7 @@ public class DayConTongBangK {
         // System.out.println(result);
 
         if (sum == 0) {
+            cnt++;
             System.out.print(result + " ");
         } else {
             for (int j = i; j < a.length; j++) {
