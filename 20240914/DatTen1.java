@@ -12,7 +12,7 @@ public class DatTen1 {
         Scanner scanner = new Scanner(System.in);
         n = scanner.nextInt();
         k = scanner.nextInt();
-        scanner.nextLine(); // Đọc bỏ dòng mới
+        scanner.nextLine();
         String[] s = new String[n];
         for (int i = 0; i < n; i++) {
             s[i] = scanner.next();

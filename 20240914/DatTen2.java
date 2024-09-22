@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class DatTen2 {
 
-    static List<int[]> idx = new ArrayList<>();
+    static List<int[]> idx;
     static int[] a;
 
     public static void main(String[] args) {
@@ -13,6 +13,7 @@ public class DatTen2 {
         while (t-- > 0) {
             int n = scanner.nextInt();
             int k = scanner.nextInt();
+            idx = new ArrayList<>();
             a = new int[k + 1];
 
             for (int i = 1; i <= k; i++) {
