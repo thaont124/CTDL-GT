@@ -13,7 +13,10 @@ public class DoiChoCacChuSo {
             k = sc.nextInt();
             String s = sc.next();
             backtrack(s.toCharArray(), 0, 0);
-            System.out.println("max of " + s + " is " + maxx);
+            if ("".equals(maxx)) {
+                System.out.println(s);
+            } else
+                System.out.println("max of " + s + " is " + maxx);
         }
     }
 

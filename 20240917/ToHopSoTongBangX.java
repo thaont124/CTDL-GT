@@ -32,6 +32,7 @@ public class ToHopSoTongBangX {
                     System.out.print(elem + " ");
                 }
             }
+            System.out.println();
         }
     }
 

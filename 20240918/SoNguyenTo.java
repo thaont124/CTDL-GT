@@ -1,4 +1,4 @@
-import java.util.arrayList;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -13,8 +13,8 @@ public class SoNguyenTo {
             int n = sc.nextInt();
             int p = sc.nextInt();
             int s = sc.nextInt();
-            result = new arrayList<>();
-            list = new arrayList<>();
+            result = new ArrayList<>();
+            list = new ArrayList<>();
 
             backTrack(n, p + 1, s);
             System.out.println(list.size());
@@ -26,7 +26,7 @@ public class SoNguyenTo {
 
     private static void backTrack(int n, int p, int s) {
         if (result.size() == n && s == 0) {
-            list.add(new arrayList<>(result));
+            list.add(new ArrayList<>(result));
         }
 
         for (int i = p; i <= s; i++) {
