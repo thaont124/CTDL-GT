@@ -25,7 +25,7 @@ public class NguoiDiDuLich {
     }
 
     private static void backTrack(int i, int start, int cost) {
-        System.out.println(start + " " + cost);
+        // System.out.println(start + " " + cost);
         if (cost >= minn) {
             return;
         }

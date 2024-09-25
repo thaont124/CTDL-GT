@@ -11,6 +11,7 @@ public class ChonSoTuMaTranVuong {
     static int[][] a;
     static int[] ddHang, ddCot;
     static List<Integer> result;
+    static List<List<Integer>> results;
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -20,6 +21,7 @@ public class ChonSoTuMaTranVuong {
         ddHang = new int[n];
         ddCot = new int[n];
         result = new ArrayList<>();
+        results = new ArrayList<>();
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
@@ -28,12 +30,16 @@ public class ChonSoTuMaTranVuong {
         }
 
         backTrack(0, k);
+        System.out.println(results.size());
+        for (List<Integer> e : results) {
+            System.out.println(e);
+        }
     }
 
     private static void backTrack(int i, int sum) {
 
         if (sum == 0 && result.size() == n) {
-            System.out.println(result);
+            results.add(new ArrayList<>(result));
         } else {
             for (int k = 0; k < n; k++) {
                 // System.out.println("add: " + i + " " + k + " " + Arrays.toString(ddCot) + " "
