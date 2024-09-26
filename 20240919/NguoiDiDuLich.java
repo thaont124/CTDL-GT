@@ -38,7 +38,7 @@ public class NguoiDiDuLich {
         }
 
         for (int j = 0; j < n; j++) {
-            if (dd[j] == 0 && j != i) {
+            if (dd[j] == 0 && j != start) {
                 dd[j] = 1;
                 backTrack(i + 1, j, cost + matrix[start][j]);
                 dd[j] = 0;
