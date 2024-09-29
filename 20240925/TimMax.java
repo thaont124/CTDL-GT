@@ -20,7 +20,7 @@ public class TimMax {
             Arrays.sort(a);
 
             for (int i = 0; i < n; i++) {
-                max = (max + (a[i] * i) % MOD) % MOD;
+                max = (max % MOD + (a[i] * i) % MOD) % MOD;
             }
 
             System.out.println(max);

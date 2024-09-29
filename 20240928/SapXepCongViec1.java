@@ -16,7 +16,7 @@ public class SapXepCongViec1 {
             for (int i = 0; i < n; i++) {
                 f[i] = scanner.nextInt();
             }
-            quickSort(f, s, 0, n - 1);
+            quickSort(f, s, 0, n - 1); // nlogn
 
             int crr = f[0];
             int cnt = 1;
