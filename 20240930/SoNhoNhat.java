@@ -25,7 +25,7 @@ public class SoNhoNhat {
 
     private static void backTrack(int i, int sum, int currentResult) {
         // System.out.println(i + " " + sum + " " + currentResult);
-        if (sum < 0 || (i == d && sum - 9 > 10)) {
+        if (sum < 0 || (i == d && sum - 9 > 10) || minn != Integer.MAX_VALUE) {
             return;
 
         }
