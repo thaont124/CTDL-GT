@@ -20,8 +20,8 @@ public class NoiDay2 {
             while (pq.size() > 1) {
                 long first = pq.poll();
                 long second = pq.poll();
-                long len = (first + second) % mod;
-                cost = (cost + len) % mod;
+                long len = first + second;
+                cost = (cost % mod + len % mod) % mod;
                 pq.add(len);
             }
             System.out.println(cost);
