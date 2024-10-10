@@ -14,7 +14,7 @@ public class KyTuThuKTrongXau {
     private static char find(int n, int k) {
         int len = (int) Math.pow(2, n) - 1;
         int mid = len / 2;
-        System.out.println(len + " " + k + " " + mid);
+        // System.out.println(len + " " + k + " " + mid);
 
         if (k == mid) {
             return (char) ('A' + n - 1);
@@ -22,6 +22,6 @@ public class KyTuThuKTrongXau {
         if (k < mid) {
             return find(n - 1, k);
         }
-        return find(n - 1, len - k);
+        return find(n - 1, len - k - 1);
     }
 }

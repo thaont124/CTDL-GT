@@ -16,7 +16,7 @@ public class LuyThua {
 
     public static long pow(long n, long k) {
         if (k == 1) {
-            return n;
+            return n % mod;
         }
         if (k == 0) {
             return 1L;
@@ -25,6 +25,6 @@ public class LuyThua {
         if (k % 2 == 0) {
             return ((x % mod) * (x % mod)) % mod;
         }
-        return ((((x % mod) * (x % mod)) % mod) * n % mod) % mod;
+        return ((((x % mod) * (x % mod)) % mod) * (n % mod)) % mod;
     }
 }

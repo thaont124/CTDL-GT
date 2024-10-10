@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class CapNghichThe {
@@ -34,7 +33,7 @@ public class CapNghichThe {
         for (int k = 0; k < n - half; k++) {
             right[k] = a[half + k];
         }
-        System.out.println(Arrays.toString(left) + " " + Arrays.toString(right));
+        // System.out.println(Arrays.toString(left) + " " + Arrays.toString(right));
 
         left = mergeSort(left, half);
         right = mergeSort(right, n - half);
@@ -62,7 +61,7 @@ public class CapNghichThe {
         while (j < right.length) {
             result[index++] = right[j++];
         }
-        System.out.println("merge: " + Arrays.toString(result) + " " + cnt);
+        // System.out.println("merge: " + Arrays.toString(result) + " " + cnt);
         return result;
     }
 }
